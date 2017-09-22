@@ -1,0 +1,10 @@
+CREATE TABLE 'order_master'(
+  'order_id' VARCHAR(32) NOT NULL ,
+  'buyer_name' VARCHAR(32) NOT NULL COMMENT '买家的名字',
+  'buyer_phone' VARCHAR(32) NOT NULL COMMENT '买家电话',
+  'buyer_address' VARCHAR(128) NOT NULL COMMENT '买家地址',
+  'buyer_openid' VARCHAR(64) NOT NULL COMMENT '买家微信openid',
+  'order_amount' DECIMAL(8,2) NOT NULL COMMENT '总金额',
+  'order_status' TINYINT(3) NOT NULL DEFAULT '0' COMMENT '订单状态 0默认下单',
+
+)COMMIT '订单表';
