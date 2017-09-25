@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  context-path: /practise
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://172.16.107.52/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: false
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+##  path: ./logs/
+#  file: ./logs/sell.log
+
